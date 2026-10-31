@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+:root {
+    --dark-navy: #13124F;
+    --navy: #1B1B6C;
+    --purple: #352BA5;
+    --pink: #F61067;
+    --green: #2AD392;
+    --gray: #9090A5;
+}
+
+* {
+    box-sizing: border-box;
+}
+body header {
+    background-color: #1B1B6C;
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #1B1B6C;
+    padding: 0px 20px;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-navy);
+    font-size: 16px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    background-color: var(--dark-navy);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    min-height: 65px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-color: #13124F;
+    color: white;
+    padding: 10px 0px;
+    margin: 0px;
+    height: 200px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--pink);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.main-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+    gap: 30px;
+    padding: 10px;
+    align-items: start;
+}
+
+.main-content,
+.sidebar {
+    min-width: 0;
+}
+
+.main-content h2 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0 0 20px;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 25px;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 25px 0;
+    background-color: #111;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.alert {
+    background-color: var(--green);
+    color: var(--dark-navy);
+    padding: 20px 25px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+/* Messages */
+
+.messages {
+    background-color: var(--pink);
+    color: white;
+    padding: 18px 20px;
+    margin-bottom:20px;
+}
+
+.messages h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.messages p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Welcome */
+
+.welcome {
+    background-color: var(--dark-navy);
+    color: white;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.welcome_0 {
+    background-color: #9090A5;
+    color: white;
+    font-size: 22px;
+    margin-bottom:0px;
+    padding-left: 20px;
+}
+
+.welcome p {
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.welcome form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    background-color:#352BA5    ;
+    color: var(--dark-navy);
+}
+
+.welcome button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+/* =========================
+   POLL
+========================= */
+
+.poll {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.poll h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+
+.poll p {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+.poll-progress {
+    display: flex;
+    width: 100%;
+    height: 12px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+}
+
+.progress-cool {
+    width: 70%;
+    background-color: var(--pink);
+}
+
+.progress-lame {
+    width: 30%;
+    background-color: var(--dark-navy);
+}
+
+.poll-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.poll-buttons button {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    font-weight: 700;
+}
+
+.vote-cool {
+    background-color: var(--pink);
+    color: white;
+    border: 2px solid var(--pink);
+}
+
+.vote-lame {
+    background-color: transparent;
+    color: var(--pink);
+    border: 2px solid var(--pink);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background-color: var(--dark-navy);
+    color: white;
+    padding: 25px 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE: TABLET
+========================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .main-layout {
+        grid-template-columns: 3fr 2fr;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .main-content h2 {
+        font-size: 26px;
+    }
+
+    .welcome,
+    .poll {
+        padding: 15px;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE: MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        min-height: 55px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+    }
+
+    .main-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .main-content h2 {
+        font-size: 26px;
+    }
+
+    .video-container {
+        margin: 20px 0;
+    }
+
+    .sidebar {
+        gap: 20px;
+    }
+
+    .site-footer {
+        padding: 20px 0;
+    }
+
+    .site-footer p {
+        font-size: 12px;
+    }
+
+}
